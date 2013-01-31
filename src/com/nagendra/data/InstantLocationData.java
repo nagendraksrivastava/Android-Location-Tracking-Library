@@ -14,7 +14,12 @@
  * limitations under the License.
  */
 package com.nagendra.data;
-
+/**
+ * This class will store the instant data of the location so once location is recieved and if you want to get that data any where in your app then there is 
+ * no need to query again for location from privider just get the latest data from here which will save the cellphone battery.
+ * @author Nagendra
+ *
+ */
 public class InstantLocationData
 	{
 		public static final String TAG = "InstantLocationData";

@@ -14,7 +14,11 @@
  * limitations under the License.
  */
 package com.nagendra.data;
-
+/**
+ * This class will store all the latest periodic data so that you should not query again and again for location updates multiple time in your app 
+ * @author Nagendra
+ *
+ */
 public class PeriodicLocationData
 	{
 		public static final String TAg = "PeriodicLocationData";

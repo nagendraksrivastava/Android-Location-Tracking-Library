@@ -18,7 +18,11 @@ package com.nagendra.data;
 import android.content.Context;
 import android.provider.Settings.Secure;
 import android.telephony.TelephonyManager;
-
+/**
+ * This class will have required phone related data . Still working on this
+ * @author Nagendra
+ *
+ */
 public class PhoneData {
 	public static final String TAG = "PhoneData";
 	private TelephonyManager telephonyManager;
@@ -44,6 +48,12 @@ public class PhoneData {
 			return telephonyManager.getLine1Number();
 			
 		}
+	/**
+	 * <b><i>public final String getMobileDeviceID(<font color="blue"><u>Context</font></u> context)</b></i></P>
+	 * @param context - Context of your application which can get by using <font color="blue"><u> getApplicationContext()</u></font> or <font color="blue"> <u>this</u></font>
+	 * @return  Android Id of the device
+	 * 
+	 */
 	
 	public final String getMobileDeviceID(Context context)
 	{

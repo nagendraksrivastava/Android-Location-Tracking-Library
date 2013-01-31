@@ -16,7 +16,11 @@
 package com.nagendra.data;
 
 import java.util.HashMap;
-
+/**
+ * This class is used to send the user information like name , email address, contact details and some other which is fully customized
+ * @author Nagendra
+ *
+ */
 public class UserData {
 
 	public static final String TAG = "UserData";
@@ -28,15 +32,24 @@ public class UserData {
 		userDetailMap = new HashMap<String, String>();
 	}
 	/**
-	 * <b><i>public final void getUserDetail(<font color="blue"><u>String</u></font> key, <font color="blue"><u>String</u></font> userInformation)</b></i></p>
+	 * <b><i>public final void StoreUserDetail(<font color="blue"><u>String</u></font> key, <font color="blue"><u>String</u></font> userInformation)</b></i></p>
 	 * Get the information and store in hash map in key value pair, Key must have some valid name in string format, Loop can be used to store multiple information in the hash map 
 	 * @param key				&#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160	A human understandable key in string format 
 	 * @param userInformation	&#160 &#160 &#160	User information which you want to pass
 	 */
-	public final void getUserDetail(String key, String userInformation)
+	public final void StoreUserDetail(String key, String userInformation)
 	{
 		userDetailMap.put(key,userInformation);
 		
 	}
 
+	public final String getUserDetail(String key)
+	{
+		return userDetailMap.get(key).toString();
+	}
+	
+	public void sendUserDataToServer(String url)
+	{
+		
+	}
 }

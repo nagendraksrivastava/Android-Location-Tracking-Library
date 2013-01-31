@@ -54,7 +54,7 @@ public class RegisterToReceiveCommandFromServer
 	/**
 	 * this method will register the APP with GCM server to receive C2DM messages
 	 */
-	public void registerAppWithGCM(Context context)
+	private void registerAppWithGCM(Context context)
 		{
 			GCMRegistrar.checkDevice(context);
 			GCMRegistrar.checkManifest(context);
