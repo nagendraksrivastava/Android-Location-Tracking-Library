@@ -74,7 +74,14 @@ public  class NagendraLocation
 			locationManager  		= (LocationManager)context.getSystemService(Context.LOCATION_SERVICE);
 			try
 				{
+				   if(locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER))
+				   {
 					locationManager.requestSingleUpdate(LocationManager.GPS_PROVIDER,new NagendraSingleLocationListener(),null);
+				   }
+				   else
+				   {
+					   locationManager.requestSingleUpdate(LocationManager.NETWORK_PROVIDER,new NagendraSingleLocationListener(),null);
+				   }
 				}
 			catch (IllegalArgumentException e) {
 				try
@@ -226,6 +233,7 @@ public  class NagendraLocation
 		@Override
 		public  void onLocationChanged(Location location)
 			{
+			Log.d(TAG, "Latitude inside onLocationChange = " + location.getLatitude());
 				instantLocationData.setInstantLatitude(location.getLatitude());
 				instantLocationData.setInstantLongitude(location.getLongitude());
 				instantLocationData.setInstantAltitude(location.getAltitude());

@@ -2,7 +2,7 @@
  * Copyright 2013 Nagendra K Srivastava.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
+ * you may not use InstantLocationData file except in compliance with the License.
  * You may obtain a copy of the License at
  *
  *   http://www.apache.org/licenses/LICENSE-2.0
@@ -15,7 +15,7 @@
  */
 package com.nagendra.data;
 /**
- * This class will store the instant data of the location so once location is recieved and if you want to get that data any where in your app then there is 
+ * InstantLocationData class will store the instant data of the location so once location is recieved and if you want to get that data any where in your app then there is 
  * no need to query again for location from privider just get the latest data from here which will save the cellphone battery.
  * @author Nagendra
  *
@@ -24,98 +24,98 @@ public class InstantLocationData
 	{
 		public static final String TAG = "InstantLocationData";
 		
-		private double instantLatitude;
-		private double instantLongitude;
-		private double instantSpeed;
-		private double instantAltitude;
-		private double instantDataAcuracy;
-		private double instantBearing;
-		private double instantTime;
-		private String instantDataProvider;
-		private int    instantNoOfSatelite;
+		private static double instantLatitude;
+		private static double instantLongitude;
+		private static double instantSpeed;
+		private static double instantAltitude;
+		private static double instantDataAcuracy;
+		private static double instantBearing;
+		private static double instantTime;
+		private static String instantDataProvider;
+		private static int    instantNoOfSatelite;
 		
 		//-------------------------------------------------------------------------------------------------------		
-		public double getInstantLatitude()
+		public static double getInstantLatitude()
 			{
 				return instantLatitude;
 			}
 		public void setInstantLatitude(double instantLatitude)
 			{
-				this.instantLatitude = instantLatitude;
+				InstantLocationData.instantLatitude = instantLatitude;
 			}
 		//-------------------------------------------------------------------------------------------------------
-		public double getInstantLongitude()
+		public static double getInstantLongitude()
 			{
 				return instantLongitude;
 			}
 		public void setInstantLongitude(double instantLongitude)
 			{
-				this.instantLongitude = instantLongitude;
+				InstantLocationData.instantLongitude = instantLongitude;
 			}
 		//-------------------------------------------------------------------------------------------------------
 		
-		public double getInstantSpeed()
+		public static double getInstantSpeed()
 			{
 				return instantSpeed;
 			}
 		public void setInstantSpeed(double instantSpeed)
 			{
-				this.instantSpeed = instantSpeed;
+				InstantLocationData.instantSpeed = instantSpeed;
 			}		
 		//-------------------------------------------------------------------------------------------------------
-		public double getInstantAltitude()
+		public static double getInstantAltitude()
 			{
 				return instantAltitude;
 			}
 		public void setInstantAltitude(double instantAltitude)
 			{
-				this.instantAltitude = instantAltitude;
+				InstantLocationData.instantAltitude = instantAltitude;
 			}
 		//-------------------------------------------------------------------------------------------------------
-		public double getInstantDataAcuracy()
+		public static  double getInstantDataAcuracy()
 			{
 				return instantDataAcuracy;
 			}
 		public void setInstantDataAcuracy(double instantDataAcuracy)
 			{
-				this.instantDataAcuracy = instantDataAcuracy;
+				InstantLocationData.instantDataAcuracy = instantDataAcuracy;
 			}
 		//-------------------------------------------------------------------------------------------------------
-		public double getInstantBearing()
+		public static  double getInstantBearing()
 			{
 				return instantBearing;
 			}
 		public void setInstantBearing(double instantBearing)
 			{
-				this.instantBearing = instantBearing;
+				InstantLocationData.instantBearing = instantBearing;
 			}
 		//-------------------------------------------------------------------------------------------------------
 		
-		public double getInstantTime()
+		public static double getInstantTime()
 			{
 				return instantTime;
 			}
 		public void setInstantTime(long instantTime)
 			{
-				this.instantTime = instantTime;
+				InstantLocationData.instantTime = instantTime;
 			}
 		//-------------------------------------------------------------------------------------------------------
-		public String getInstantDataProvider()
+		public static String getInstantDataProvider()
 			{
 				return instantDataProvider;
 			}
 		public void setInstantDataProvider(String instantDataProvider)
 			{
-				this.instantDataProvider = instantDataProvider;
+				InstantLocationData.instantDataProvider = instantDataProvider;
 			}
 		//-------------------------------------------------------------------------------------------------------
-		public int getInstantNoOfSatelite()
+		public static  int getInstantNoOfSatelite()
 			{
 				return instantNoOfSatelite;
 			}
 		public void setInstantNoOfSatelite(int instantNoOfSatelite)
 			{
-				this.instantNoOfSatelite = instantNoOfSatelite;
+				InstantLocationData.instantNoOfSatelite = instantNoOfSatelite;
 			}
 		
 	}

@@ -29,8 +29,7 @@ public class PhoneData {
 	
 	public PhoneData()
 	{
-		 
-		
+		 super();
 	}
 	
 	
