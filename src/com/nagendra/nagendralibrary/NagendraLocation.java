@@ -35,8 +35,8 @@ import com.loopj.android.http.RequestParams;
 import com.nagendra.data.InstantLocationData;
 import com.nagendra.data.PeriodicLocationData;
 import com.nagendra.nagendralibrary.util.LibConstants;
-import com.nagendra.nagendralibrary.util.Utility;
-import com.nagendra.nagendralibrary.util.Utility.ServiceProviderException;
+import com.nagendra.nagendralibrary.util.LocUtility;
+import com.nagendra.nagendralibrary.util.LocUtility.ServiceProviderException;
 //this class is designed  for tracking as per user request from client side . For example if user request for taxi or similar situation or he wants to get tracked then this class can be utilized
 public  class NagendraLocation
 {

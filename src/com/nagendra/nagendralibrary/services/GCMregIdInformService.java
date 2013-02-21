@@ -30,7 +30,8 @@ import com.loopj.android.http.AsyncHttpClient;
 import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.loopj.android.http.RequestParams;
 import com.nagendra.nagendralibrary.util.LibConstants;
-import com.nagendra.nagendralibrary.util.Utility;
+import com.nagendra.nagendralibrary.util.LocUtility;
+
 
 /*
  * Copyright 2013 Nagendra K Srivastava.
@@ -74,7 +75,7 @@ public class GCMregIdInformService extends IntentService
 				deviceType 	=  Build.MANUFACTURER + "," + Build.MODEL;
 				appToken 	=  context.getResources().getString(context.getResources().getIdentifier("app_token","string",context.getPackageName()));
 				registerC2DMID = new AsyncHttpClient();
-				if(Utility.isTablet(context)){
+				if(LocUtility.isTablet(context)){
 
 					tabOrMobile = "tab";
 				}
