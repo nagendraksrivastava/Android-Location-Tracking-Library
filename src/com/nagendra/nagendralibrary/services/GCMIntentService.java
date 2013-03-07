@@ -21,7 +21,11 @@ import android.content.Intent;
 import android.util.Log;
 
 import com.google.android.gcm.GCMBaseIntentService;
-
+/**
+ *  This service will get called once you will receive message from GCM 
+ * @author Nagendra
+ *
+ */
 public class GCMIntentService extends GCMBaseIntentService
 {
 	public static final String TAG = "GCMIntentService";

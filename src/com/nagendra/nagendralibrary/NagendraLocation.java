@@ -58,7 +58,6 @@ public  class NagendraLocation
 	public NagendraLocation()
 		{
 			super();
-
 			
 		}
 
@@ -66,7 +65,7 @@ public  class NagendraLocation
 	/**
 	 * <b><i>public final void instantLocation(<font color="red"><u>Context</u></font> context)</b></i></p>
 	 * Get instant location. provider will be automatically selected
-	 * @param context Context of your application which can get by using <font color="blue"><u> getApplicationContext()</u></font> or <font color="blue"> <u>this</u></font></p>
+	 * @param context Context of your application which can get by using <font color="red"><u> getApplicationContext()</u></font> or <font color="red"> <u>this</u></font></p>
 	 */
 	public final void instantLocation(Context context)
 		{
@@ -105,9 +104,9 @@ public  class NagendraLocation
 		}
 	
 	/**
-	 * <b><i>public final void instantLocation(<font color="blue"><u>Context</u></font> context, <font color="blue"><u>String</u></font> provider)</b></i></p>
+	 * <b><i>public final void instantLocation(<font color="red"><u>Context</u></font> context, <font color="red"><u>String</u></font> provider)</b></i></p>
 	 * Get instant location  and send this location to our server
-	 * @param context - Context of your application which can get by using <font color="blue"><u> getApplicationContext()</u></font> or <font color="blue"> <u>this</u></font>
+	 * @param context - Context of your application which can get by using <font color="red"><u> getApplicationContext()</u></font> or <font color="red"> <u>this</u></font>
 	 * @param provider - Provider name which will be passed as parameter which must be either gps , wifi or network 
 	 * @throws ServiceProviderException   if provider is null or does not exist
 	 */
@@ -135,10 +134,10 @@ public  class NagendraLocation
 	}
 	
 	/**
-	 * <b><i>public HashMap<String,Double> userLastLocation(<font color="blue"><u>Context</u></font> context)</b></i></p>
+	 * <b><i>public HashMap<String,Double> userLastLocation(<font color="red"><u>Context</u></font> context)</b></i></p>
 	 * Retrieves user's last location data. It can be beneficial when user is not in network coverage so last location can be retrieved</br>
-	 * <font colour="blue"><u>Key-</u></font> <font color="red"> lat, lon, dir </font> where lat- latitude, lon- longitude, dir- direction
-	 * @param context				Context of your application which can get by using <font color="blue"><u> getApplicationContext()</u></font> or <font color="blue"> <u>this</u></font>
+	 * <font colour="red"><u>Key-</u></font> <font color="red"> lat, lon, dir </font> where lat- latitude, lon- longitude, dir- direction
+	 * @param context				Context of your application which can get by using <font color="red"><u> getApplicationContext()</u></font> or <font color="red"> <u>this</u></font>
 	 * @return last location data 
 	 */
 	public HashMap<String,Double> userLastLocation(Context context)
@@ -154,14 +153,14 @@ public  class NagendraLocation
 		}
 	
 	/**
-	 * <b><i>public final void startPeriodicTracking(<font color="blue"><u>Context</font></u> context,<font color="blue"><u>long</u></font> minTrackingTime,<font color="blue"><u>float</u></font>
+	 * <b><i>public final void startPeriodicTracking(<font color="red"><u>Context</font></u> context,<font color="red"><u>long</u></font> minTrackingTime,<font color="red"><u>float</u></font>
 	 *  minTrackingDistance)</b></i>
 	 * <br>
 	 * <br>
 	 * this method should be called when user request for taxi for in the similar situation and need to send information to our centralised server(this comment must be modified later)
 	 * Overriding of this method is not allowed.
 	 * <br>
-	 * @param context  				Context of your application which can get by using <font color="blue"><u> getApplicationContext()</u></font> or <font color="blue"> <u>this</u></font></p>
+	 * @param context  				Context of your application which can get by using <font color="red"><u> getApplicationContext()</u></font> or <font color="red"> <u>this</u></font></p>
 	 * @param minTrackingTime		Minimum time interval for location updates ,  In mili seconds ,<b> For example</b> if minTrackingTime = 2000 then after every 2 seconds it will receive location updates.</p>
 	 * @param minTrackingDistance   Minimum tracking distance for location updates , in meter , <b>For Example</b> if minTrackingDistance = 1000 then after every 1000 meter it will receive location updates
 	 */
@@ -184,11 +183,11 @@ public  class NagendraLocation
 		}
 
 	/**
-	 * <b><i>public final void startPeriodicTracking(<font color="blue"><u>Context</u></font> context,<font color="blue"><u>String</font></u> provider,<font color="blue"><u>long</font></u> minTrackingTime,<font color="blue"><u>float</font></u> minTrackingDistance)
+	 * <b><i>public final void startPeriodicTracking(<font color="red"><u>Context</u></font> context,<font color="red"><u>String</font></u> provider,<font color="red"><u>long</font></u> minTrackingTime,<font color="red"><u>float</font></u> minTrackingDistance)
 	 * </b></i></p>
 	 * this method should be called when user request for taxi for in the similar situation and need to send information to our centralised server(this comment must be modified later for demo only)
 	 * Overriding of this method is not allowed.
-	 * @param context  						Context of your application which can get by using <font color="blue"><u> getApplicationContext()</u></font> or <font color="blue"> <u>this</u></font></p>
+	 * @param context  						Context of your application which can get by using <font color="red"><u> getApplicationContext()</u></font> or <font color="red"> <u>this</u></font></p>
 	 * @param provider						Provider name which will be passed as parameter which must be either gps , wifi or network
 	 * @param minTrackingTime				Minimum time interval for location updates ,  In mili seconds ,<b> For example</b> if minTrackingTime = 2000 then after every 2 seconds it will receive location updates.</p>
 	 * @param minTrackingDistance			Minimum tracking distance for location updates , in meter , <b>For Example</b> if minTrackingDistance = 1000 then after every 1000 meter it will receive location updates

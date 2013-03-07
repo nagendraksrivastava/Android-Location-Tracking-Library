@@ -54,7 +54,7 @@ public class LocUtility
 	public static final String TAG = "Utility";
 	
 /**
- * <b><i>public static void generateLogOnSD(<font color="blue"><u>String</u></font> sBody, <font color="blue"><u>String</u></font> fileName, <font color="blue"><u>String</u></font> folderName)</b></i></p> 
+ * <b><i>public static void generateLogOnSD(<font color="red"><u>String</u></font> sBody, <font color="red"><u>String</u></font> fileName, <font color="red"><u>String</u></font> folderName)</b></i></p> 
 	 * this method can be used to write file on sd card. It receives content of file as sbody parameter, name of the file 
 	 * as fileName parameter and folder name as folderName parameter, First this method checks that sd card is available or not if available then
 	 * it will write file on external storage which is called sd card	
@@ -126,7 +126,7 @@ public class LocUtility
 
 
 	/**
-	 * <b><i>public static boolean isTabletDevice(<font color="blue"><u>Context</u></font> activityContext)</b></i></p>
+	 * <b><i>public static boolean isTabletDevice(<font color="red"><u>Context</u></font> activityContext)</b></i></p>
 	 * Checks if the device is a tablet or a phone on the basis of density and display
 	 * @param activityContext
 	 *            The Activity Context.
@@ -156,9 +156,9 @@ public class LocUtility
 	}
 	
 	/**
-	 * <b><i>public  static void buildAlertMessageNoGps(final <font color="blue"><u>Context</font></u> context)</b></i></p> 
+	 * <b><i>public  static void buildAlertMessageNoGps(final <font color="red"><u>Context</font></u> context)</b></i></p> 
 	 *  This method will prompt a dialog box and it will redirect to settings from where user can enable GPS functionality
-	 *  @param context   Context of your application which can get by using <font color="blue"><u> getApplicationContext()</u></font> or <font color="blue"> <u>this</u></font></p>
+	 *  @param context   Context of your application which can get by using <font color="red"><u> getApplicationContext()</u></font> or <font color="red"> <u>this</u></font></p>
 	 */
 	public  static void buildAlertMessageNoGps(final Context context) {
 		final AlertDialog.Builder builder = new AlertDialog.Builder(context);
@@ -202,9 +202,9 @@ public class LocUtility
 
 		}
 		/**
-		 * <b><i>public static boolean isGPRSAvailable(<font color="blue"><u>Context</font></u> context)</b></i></p>
+		 * <b><i>public static boolean isGPRSAvailable(<font color="red"><u>Context</font></u> context)</b></i></p>
 		 * this will check whether GPRS is available or not
-		 * @param  context	Context of your application which can get by using <font color="blue"><u> getApplicationContext()</u></font> or <font color="blue"> <u>this</u></font></p>
+		 * @param  context	Context of your application which can get by using <font color="red"><u> getApplicationContext()</u></font> or <font color="red"> <u>this</u></font></p>
 		 * @return boolean
 		 * 
 		 */
@@ -218,7 +218,7 @@ public class LocUtility
 					return false;
 			}
 		/**
-		 * <b><i>public static boolean isWIFIAvailable(<font color ="blue"><u>Context</font></u> context)</b></i></p>
+		 * <b><i>public static boolean isWIFIAvailable(<font color ="red"><u>Context</font></u> context)</b></i></p>
 		 * This method will check whether WIFI is available or not , if available it will return true else it will return false
 		 * @return boolean
 		 */
@@ -253,7 +253,7 @@ public class LocUtility
 
 			}
 		/**
-		 * <b><i>public static boolean isValidEmail(<font color="blue"><u>String</u></font> email)</b></i></p>
+		 * <b><i>public static boolean isValidEmail(<font color="red"><u>String</u></font> email)</b></i></p>
 		 * this method can be used for email format validation if matched then return true else return false 
 		 * @param email   pass the email address as a parameter which need to be validated
 		 * @return boolean 
@@ -267,7 +267,7 @@ public class LocUtility
 			}
 
 		/**
-		 * <b><i>public static HashMap<String,String> getCurrentLocationByName(<font color="blue"><u>Context</u></font> context)</b></i></p>
+		 * <b><i>public static HashMap<String,String> getCurrentLocationByName(<font color="red"><u>Context</u></font> context)</b></i></p>
 		 * This method will return the address of the location in the form of hash map in key value pair, Values of the address can be retrieved using keys.
 		 * The available keys are <font color = "red">country</font>, <font color = "red">admin_area</font>, <font color = "red">feature_name</font>, <font color = "red">locality_name</font>, 
 		 * <font color = "red">postal_code</font>, <font color = "red">premises</font>, <font color = "red">sub_adminarea</font>, <font color = "red">sub_locality</font>,

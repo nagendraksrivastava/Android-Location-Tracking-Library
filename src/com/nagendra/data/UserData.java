@@ -32,7 +32,7 @@ public class UserData {
 		userDetailMap = new HashMap<String, String>();
 	}
 	/**
-	 * <b><i>public final void StoreUserDetail(<font color="blue"><u>String</u></font> key, <font color="blue"><u>String</u></font> userInformation)</b></i></p>
+	 * <b><i>public final void StoreUserDetail(<font color="red"><u>String</u></font> key, <font color="red"><u>String</u></font> userInformation)</b></i></p>
 	 * Get the information and store in hash map in key value pair, Key must have some valid name in string format, Loop can be used to store multiple information in the hash map 
 	 * @param key				&#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160	A human understandable key in string format 
 	 * @param userInformation	&#160 &#160 &#160	User information which you want to pass

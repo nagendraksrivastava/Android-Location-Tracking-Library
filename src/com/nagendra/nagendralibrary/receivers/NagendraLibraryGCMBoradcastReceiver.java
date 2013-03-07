@@ -24,7 +24,7 @@ import com.nagendra.nagendralibrary.services.GCMIntentService;
 
 
 /**
- * Once C2DM event is received this method will automatically get called. 
+ * Once C2DM event is received this method will automatically get called. and this method will start GCMIntentService
  * @author nagendra
  *
  */

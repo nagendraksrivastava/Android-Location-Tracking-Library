@@ -34,11 +34,11 @@ public class PhoneData {
 	
 	
 	/**
-	 * <b><i>public final String getMobileNo(<font color="blue"><u>Context</font></u> context)</b></i></P>
+	 * <b><i>public final String getMobileNo(<font color="red"><u>Context</font></u> context)</b></i></P>
 	 * Returns the mobile number of the user
-	 * @param context - 	Context of your application which can get by using <font color="blue"><u> getApplicationContext()</u></font> or <font color="blue"> <u>this</u></font>
+	 * @param context - 	Context of your application which can get by using <font color="red"><u> getApplicationContext()</u></font> or <font color="red"> <u>this</u></font>
 	 * @return    		mobile number</br>
-	 * Required Permission---  <b><font color="blue">READ_PHONE_STATE</font></b>  declare this permission in androidmanifest.xml file in which is available in your project root folder
+	 * Required Permission---  <b><font color="red">READ_PHONE_STATE</font></b>  declare this permission in androidmanifest.xml file in which is available in your project root folder
 	 */
 	public final String getMobileNo(Context context)
 		{
@@ -48,8 +48,8 @@ public class PhoneData {
 			
 		}
 	/**
-	 * <b><i>public final String getMobileDeviceID(<font color="blue"><u>Context</font></u> context)</b></i></P>
-	 * @param context - Context of your application which can get by using <font color="blue"><u> getApplicationContext()</u></font> or <font color="blue"> <u>this</u></font>
+	 * <b><i>public final String getMobileDeviceID(<font color="red"><u>Context</font></u> context)</b></i></P>
+	 * @param context - Context of your application which can get by using <font color="red"><u> getApplicationContext()</u></font> or <font color="red"> <u>this</u></font>
 	 * @return  Android Id of the device
 	 * 
 	 */

@@ -18,7 +18,12 @@ package com.nagendra.nagendralibrary;
 import android.util.Log;
 
 import com.loopj.android.http.AsyncHttpResponseHandler;
-
+/**
+ * A demo class to receive data from server, so where ever you want to receive data from server just create a inner class like this and pass the instance of this class,
+ * You can implement your logic on OnSuccess(String message)
+ * @author Nagendra
+ *
+ */
 public class ResponseFromServer extends AsyncHttpResponseHandler{
 	
 	public static String TAG = "ResponseFromServer";

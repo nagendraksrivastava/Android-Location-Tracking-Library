@@ -28,7 +28,8 @@ import com.nagendra.nagendralibrary.util.LibConstants;
 
 
 /**
- * This class will be used to get the location of the device periodically
+ * This class can be used to register with GCM server, It will check wheather aap is registered or not and it will start a service name GCMregIdInformService to send the 
+ * registration ID (which is received from Google Cloud Messaging) to your custom server so that you can send GCM messages to your app  
  * @author nagendra
  *
  */
