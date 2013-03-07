@@ -25,17 +25,10 @@ import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
 import android.os.Bundle;
-import android.provider.Settings.Secure;
-import android.telephony.TelephonyManager;
 import android.util.Log;
 
-import com.loopj.android.http.AsyncHttpClient;
-import com.loopj.android.http.AsyncHttpResponseHandler;
-import com.loopj.android.http.RequestParams;
 import com.nagendra.data.InstantLocationData;
 import com.nagendra.data.PeriodicLocationData;
-import com.nagendra.nagendralibrary.util.LibConstants;
-import com.nagendra.nagendralibrary.util.LocUtility;
 import com.nagendra.nagendralibrary.util.LocUtility.ServiceProviderException;
 //this class is designed  for tracking as per user request from client side . For example if user request for taxi or similar situation or he wants to get tracked then this class can be utilized
 public  class NagendraLocation

@@ -237,7 +237,7 @@ public class LocUtility
 		 */
 		public static void writePasswordOnXml(String password, Context context)
 			{
-				SharedPreferences sharePrefs = context.getSharedPreferences("Name of the file", context.MODE_PRIVATE);
+				SharedPreferences sharePrefs = context.getSharedPreferences("Name of the file", Context.MODE_PRIVATE);
 				SharedPreferences.Editor prefEditor; 
 				try 
 				{
