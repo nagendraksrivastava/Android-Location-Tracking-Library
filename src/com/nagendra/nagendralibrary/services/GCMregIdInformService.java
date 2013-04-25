@@ -1,4 +1,3 @@
-
 /*
  * Copyright 2013 Nagendra K Srivastava.
  *
@@ -79,10 +78,6 @@ public class GCMregIdInformService extends IntentService
 				String gcmRegId = intent.getStringExtra("c2dm_id"); 
 				RequestParams gcmRegIdRequestParam = new RequestParams();
 				gcmRegIdRequestParam.put("uuid",deviceID);
-				gcmRegIdRequestParam.put("c2dmid",gcmRegId);
-				gcmRegIdRequestParam.put("apptoken",appToken);
-				gcmRegIdRequestParam.put("device",deviceType);
-				gcmRegIdRequestParam.put("version",version);
 				registerC2DMID.post(LibConstants.SERVER_ADDRESS,gcmRegIdRequestParam,new sendRegIdToServer());
 			}
 
