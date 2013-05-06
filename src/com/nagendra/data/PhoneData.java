@@ -58,5 +58,10 @@ public class PhoneData {
 	{
 		return Secure.getString(context.getContentResolver(), Secure.ANDROID_ID);
 	}
+	
+	public final String getSimNumber(Context context) {
+		telephonyManager = (TelephonyManager)context.getSystemService(Context.TELEPHONY_SERVICE);
+		return telephonyManager.getSimSerialNumber();
+	}
 
 }
