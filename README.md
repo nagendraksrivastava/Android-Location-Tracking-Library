@@ -40,10 +40,6 @@ few methods
           limitations under the License.
 
 
-<h4> I am developing sample application  but It will  take some  time because I am a single guy and yeah I am not 
- unemployed</h4>
-
-
  
  
  
